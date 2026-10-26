@@ -7,7 +7,7 @@ VECTRA is a multi-module Excel workbook using **synthetic business data** to con
 > **Status: development / desktop verification pending.** This is a decision-support demonstration, not a production ERP. The native Excel 3D Map, Power Query/Power Pivot model, PivotTable slicers, VBA and workforce optimization are **not implemented**. Do not describe them as delivered.
 
 ## Get started
-1. Open `workbook/VECTRA_Enterprise_Intelligence_v0.5_Enterprise.xlsx` in desktop Microsoft Excel.
+1. [Download the current workbook](workbook/VECTRA_Enterprise_Intelligence_v0.5_Enterprise.xlsx), then open it in desktop Microsoft Excel.
 2. Read **START HERE**, then review **EXECUTIVE COCKPIT**.
 3. Consult [the user manual](docs/USER_MANUAL.md) before editing inputs.
 4. Inspect [the known limitations and validation checklist](docs/VALIDATION.md).
@@ -49,3 +49,22 @@ All facilities, names, events, costs and results are fictional. The detailed mod
 **Compatibility:** Desktop Microsoft Excel recommended. No macros are included in the current `.xlsx` release.
 
 **License:** No license is granted unless a LICENSE file is added. Contact the repository owner before reuse.
+
+## Workbook previews
+
+These images are rendered from v0.5, not captured in desktop Excel. They show selected worksheet ranges; desktop layout and chart acceptance remain pending.
+
+### Executive cockpit
+![Executive cockpit KPI and management review range](assets/executive-cockpit.png)
+
+### Scenario engine
+![Scenario assumptions and modeled results](assets/scenario-engine.png)
+
+### Plant network
+![Static Canadian plant network visualization](assets/plant-network-map.png)
+
+The map belongs to the earlier geographic sample and does not reconcile to the detailed finance model. Bubble labels should be verified against the site coordinates before final portfolio publication.
+
+**Reporting-period correction:** “Annual” labels in the current cockpit and scenario engine sum only January–April 2026. Treat those figures as four-month totals, not full-year results or annualized estimates.
+
+See [CHANGELOG.md](CHANGELOG.md) for release contents and [assets/README.md](assets/README.md) for image provenance. Only the current workbook is included; older iterations are omitted.

@@ -23,3 +23,18 @@
 5. Visual QA in desktop Excel and complete cross-module reconciliation remain outstanding.
 
 **Release rule:** Do not label the workbook enterprise-ready or Upwork-final until these gates are passed.
+
+## Repository packaging checks — 26 October 2026
+- XLSX ZIP integrity: passed; workbook readable programmatically; 19 worksheets present.
+- Detailed finance: 48 records, 12 plants × four months (January–April 2026).
+- Independent source calculations: revenue CAD 32,665,304; operating profit CAD 7,576,492; margin 23.1943%; weighted on-time delivery 87.5900%. Rendered cockpit values match these spot checks.
+- Scenario and executive KPI ranges rendered and visually inspected. This is not desktop Excel acceptance or comprehensive formula testing.
+- One canonical workbook; documentation and image paths checked in the repository tree.
+
+### Additional known defects / follow-up
+- Annual labels describe four-month totals; correct labels before the final release.
+- Map label placement and city-coordinate association need verification before final publication.
+- Fixed formula ranges require review when rows are added.
+- Desktop Excel repair warnings, interactive behavior, chart rendering and full reconciliation remain untested.
+
+Workbook SHA-256: `847dfd6d3c6ce0f4de792911a5d697c9536779d5ba1ed2be6074f68e152578c4`.

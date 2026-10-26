@@ -48,3 +48,10 @@ The workbook currently embeds a **static** Canadian plant map. For an interactiv
 
 ## Publishing and acceptance
 Complete the checks in [VALIDATION.md](VALIDATION.md). Capture genuine screenshots from Excel only after verification. Do not claim Power Query, VBA, slicers, 3D Maps or enterprise deployment until actually implemented.
+
+## Reporting period and current release caveats
+The detailed finance model contains January–April 2026 only. The cockpit's “Annual revenue” and “Annual operating profit,” and the scenario engine's “MODELED ANNUAL P&L,” actually sum these four months. Do not interpret them as full-year or annualized amounts. The workbook has been preserved unchanged in this publication.
+
+Scenario selections are independent for each driver; a mixed selection is a hybrid sensitivity. Formula ranges are fixed: appending rows does not guarantee that summary formulas expand. Check every affected reference after extending a dataset.
+
+The map and older dashboard tabs use a separate synthetic sample. Map status colors and bubble sizes should not be compared with the detailed cockpit totals. See the [preview provenance](../assets/README.md).
