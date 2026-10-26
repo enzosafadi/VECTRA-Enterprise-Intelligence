@@ -1,73 +1,51 @@
-# VECTRA
-## Enterprise Performance & Decision Intelligence
+# VECTRA — Enterprise Performance & Decision Intelligence
 
-**An advanced Excel business management workbook connecting financial analysis, operational performance, workforce planning, project delivery, risk assessment, and executive decisions.**
+**Excel-based manufacturing network decision intelligence · Portfolio demonstration · v0.5 (development)**
 
-> **Project status: Planning and architecture.** This repository currently contains the project introduction. The workbook, datasets, dashboards, and VBA modules will be developed in stages; the capabilities below describe the planned scope.
+VECTRA is a multi-module Excel workbook using **synthetic business data** to connect manufacturing performance, plant profitability, workforce coverage, inventory replenishment, risk governance, scenario planning and geographic analysis.
 
-## Why VECTRA exists
+> **Status: development / desktop verification pending.** This is a decision-support demonstration, not a production ERP. The native Excel 3D Map, Power Query/Power Pivot model, PivotTable slicers, VBA and workforce optimization are **not implemented**. Do not describe them as delivered.
 
-Business information often lives in disconnected spreadsheets. VECTRA is designed to bring that information into a coherent Excel system: shared master data, traceable calculations, consistent KPIs, and decision-oriented dashboards.
+## Get started
+1. Open `workbook/VECTRA_Enterprise_Intelligence_v0.5_Enterprise.xlsx` in desktop Microsoft Excel.
+2. Read **START HERE**, then review **EXECUTIVE COCKPIT**.
+3. Consult [the user manual](docs/USER_MANUAL.md) before editing inputs.
+4. Inspect [the known limitations and validation checklist](docs/VALIDATION.md).
 
-The project will demonstrate business analysis, advanced Excel engineering, financial modeling, process optimization, and automation through a realistic fictional company. It is an Excel-based management and decision-support system, not a production ERP.
+## Implemented modules
+| Module | Current functionality |
+|---|---|
+| Executive cockpit | Formula-based KPI summary and scorecard |
+| Finance | Monthly plant revenue, cost, profit and margin calculations |
+| Operations | Production yield, delivery and capacity utilization |
+| Workforce | Shift coverage and overtime exception flags |
+| Inventory | SKU-level reorder-point calculations and alerts |
+| Issue register | Risk scoring, status and accountable owners |
+| Scenario engine | Selectable downside/base/upside driver assumptions |
+| Geographic intelligence | Canadian facility metrics and a **static** plant-network map |
+| Legacy dashboards | Retained demonstration views; **not reconciled** with the new detailed layer |
 
-## Planned business modules
+## Data and scope
+All facilities, names, events, costs and results are fictional. The detailed model covers **12 simulated Canadian plants** and **four reporting months**. The original workbook tabs are retained for historical continuity but represent a different synthetic sample; **do not add legacy and detailed totals together**.
 
-| Module | Intended purpose |
-| --- | --- |
-| Executive dashboard | Summarize financial and operational results, trends, targets, and exceptions. |
-| Financial management | Compare budgets and actuals; analyze revenue, costs, margins, and cash flow. |
-| Operational performance | Track production, capacity, productivity, quality, and service performance. |
-| Workforce planning | Analyze staffing, availability, utilization, and labor costs. |
-| Project portfolio | Track owners, milestones, deadlines, dependencies, budgets, and delivery status. |
-| Risk and decision register | Record risks, likelihood, impact, mitigation, ownership, and management decisions. |
-| Scenario planning | Explore assumptions and compare base, upside, and downside outcomes. |
-| Automation and controls | Streamline repeatable tasks with VBA, input validation, formula protection, and exception checks. |
+## Project assets
+- [User manual](docs/USER_MANUAL.md) — navigation, safe editing, management workflow and troubleshooting
+- [Validation checklist](docs/VALIDATION.md) — desktop acceptance checks and known limitations
+- [Data dictionary](docs/DATA_DICTIONARY.md) — model entities, measures and ownership
+- [Plant network preview](assets/plant-network-map.png) — static visualization, not a native Excel map
 
-## Planned workbook architecture
+## Roadmap
+- [x] Multi-module Excel workbook and simulated data
+- [x] Executive cockpit and static geographic visualization
+- [x] User manual and documentation
+- [ ] Reconcile original and detailed data into one governed model
+- [ ] Verify formulas and visual rendering in desktop Excel
+- [ ] Build native PivotTables, slicers and time filters
+- [ ] Implement Power Query/Power Pivot model
+- [ ] Configure native Excel 3D Maps tour
+- [ ] Add scheduling optimization, automated QA and optional VBA
+- [ ] Capture verified screenshots from the actual workbook and prepare Upwork release
 
-1. **Start and guidance:** navigation, instructions, KPI definitions, and update procedures.
-2. **Inputs and master data:** controlled business assumptions, reference tables, and source records.
-3. **Calculation engines:** documented financial, operational, workforce, and scenario logic.
-4. **Management outputs:** dashboards, analysis views, exception reports, and decision registers.
-5. **Quality controls:** reconciliation checks, validation results, and documented limitations.
+**Compatibility:** Desktop Microsoft Excel recommended. No macros are included in the current `.xlsx` release.
 
-The final worksheet structure and company scenario will be defined during architecture design.
-
-## Data approach
-
-All company, employee, supplier, customer, and transaction data will be simulated. Datasets will include realistic relationships, business rules, and exceptions so the workbook demonstrates how management decisions change under imperfect operating conditions.
-
-No confidential company information or real personal records are required.
-
-## Planned repository contents
-
-- Completed Excel workbook (`.xlsm` if VBA is included).
-- Exported VBA source modules for readable version history.
-- Simulated source datasets and a data dictionary.
-- Workbook architecture and business-rule documentation.
-- User guide and validation notes.
-- Dashboard screenshots and portfolio presentation assets.
-
-These deliverables are planned and are not yet available for download.
-
-## Development roadmap
-
-- [x] Create the public GitHub repository and introductory README.
-- [ ] Define the company scenario, business requirements, and workbook architecture.
-- [ ] Generate and document interconnected simulated datasets.
-- [ ] Build calculation engines and control checks.
-- [ ] Design management dashboards and scenario tools.
-- [ ] Implement and document VBA automation.
-- [ ] Validate calculations, business rules, and user workflows.
-- [ ] Prepare the user guide, screenshots, and Upwork portfolio presentation.
-
-## Compatibility and use
-
-The intended primary environment is Microsoft Excel for Windows desktop. Exact version requirements will be documented as implementation progresses. VBA features require a macro-enabled workbook and will not run in Excel for the web.
-
-There is no runnable workbook at this stage. Usage instructions will be added with the first working release.
-
-## Portfolio title
-
-**VECTRA | Advanced Excel Business Intelligence & Automation**
+**License:** No license is granted unless a LICENSE file is added. Contact the repository owner before reuse.
