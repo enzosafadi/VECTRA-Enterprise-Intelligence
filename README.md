@@ -68,3 +68,9 @@ The map belongs to the earlier geographic sample and does not reconcile to the d
 **Reporting-period correction:** “Annual” labels in the current cockpit and scenario engine sum only January–April 2026. Treat those figures as four-month totals, not full-year results or annualized estimates.
 
 See [CHANGELOG.md](CHANGELOG.md) for release contents and [assets/README.md](assets/README.md) for image provenance. Only the current workbook is included; older iterations are omitted.
+
+## Who it benefits
+
+Manufacturing leaders, plant managers and finance, workforce and inventory analysts: connected performance reviews and explicit operational exceptions.
+
+These are intended users and benefits, not evidence of adoption or measured customer outcomes.
