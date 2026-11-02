@@ -1,5 +1,9 @@
 # VECTRA — Enterprise Performance & Decision Intelligence
 
+## Project roadmap — concept to sale
+
+![Current project timeline](docs/project-roadmap.svg)
+
 **Excel-based manufacturing network decision intelligence · Portfolio demonstration · v0.5 (development)**
 
 VECTRA is a multi-module Excel workbook using **synthetic business data** to connect manufacturing performance, plant profitability, workforce coverage, inventory replenishment, risk governance, scenario planning and geographic analysis.
